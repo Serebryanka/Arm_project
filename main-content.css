@@ -14,6 +14,11 @@
   margin-bottom: 20px;
 }
 
+.text-section {
+  position: relative;
+}
+
+
 .text-section_toppadding {
   padding-top: 5px;
 }
@@ -35,6 +40,30 @@
   font-weight: normal;
   margin: 0;
   padding: 7px 0;
+}
+
+.text-section__text-wrapper {
+  display: inline-block;
+  /*width: 100%;*/
+  min-height: 150px;
+  vertical-align: middle;
+  background-image: url("images/brand_tunein1.jpg");
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  padding-right: 200px;
+}
+
+.text-section__image-wrapper {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.text-section__image {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
 }
 
 .text-section__link {
@@ -165,8 +194,63 @@
   height: auto;
 }
 
-@media screen and (max-width: 1024px) {
+.brand-section {
+  padding-top: 20px;
+}
 
+.brand-section__image-container {
+  display: block;
+  float: left;
+  width: 250px;
+}
+
+.brand-section__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.brand-section__download-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.brand-section__content-container {
+  display: block;
+  margin-left: 270px;
+  padding: 0;
+  /*box-sizing: border-box;*/
+  font-family: "Roboto", sans-serif;
+}
+
+.brand-section__content-wrapper {
+  display: block;
+  min-height: 130px;
+  margin: 0 0 20px 0;
+}
+
+.brand-section__content-picture {
+  display: block;
+  float: left;
+  width: 89px;
+  height: auto;
+}
+
+.brand-section__content {
+  display: block;
+  min-height: 120px;
+  height: auto;
+  margin: 0 0 0 110px;
+  line-height: 24px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-section__text-wrapper {
+    padding-right: 180px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -202,6 +286,20 @@
     display: none;
   }
 
+  .text-section__text-wrapper {
+    background-position: 100% 16px;
+  }
+
+  .brand-section__image-container {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .brand-section__content-container {
+    width: 100%;
+    margin: 0;
+  }
 
 }
 
@@ -230,5 +328,24 @@
     overflow: hidden;
   }
 
+  .text-section__text-wrapper {
+    width: 100%;
+    min-height: auto;
+    background-position: 50% 100%;
+    background-size: 100%;
+    padding: 0 0 105% 0;
+  }
+
+  .brand-section__image-container {
+    max-width: 100%;
+  }
+
+  .brand-section__content-picture {
+    margin-right: 20px;
+  }
+
+  .brand-section__content {
+    margin: 0;
+  }
 
 }
