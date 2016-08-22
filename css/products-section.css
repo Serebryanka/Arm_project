@@ -1,0 +1,98 @@
+.text-section__link {
+  text-decoration: none;
+  color: #169dd0;
+}
+
+.products-section {
+  padding: 10px 0 55px 0;
+}
+
+.products-section__image_big {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products-section__image_small {
+  display: none;
+}
+
+.downloadPDF-section {
+  text-align: center;
+  padding: 35px 0 0 0;
+  margin: 0 0 35px 0;
+}
+
+.downloadPDF-section__title {
+  margin: 0 0 35px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+.downloadPDF-section__link {
+  display: inline-block;
+  width: 285px;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.downloadPDF-section__link:hover {
+  cursor: pointer;
+}
+
+.downloadPDF-section__image {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+
+@media screen and (min-width: 1920px) {
+  .products-section {
+    padding-bottom: 50px;
+  }
+
+  .downloadPDF-section {
+    margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+
+  .products-section {
+    padding: 10px 0 5px 0;
+  }
+
+  .products-section__image_big {
+    display: none;
+  }
+
+  .products-section__image_small {
+    display: block;
+    width: 100%;
+  }
+
+  .products-section {
+    padding: 10px 0 23px 0;
+  }
+
+  .downloadPDF-section {
+    padding: 25px 0 0 0;
+  }
+
+  .downloadPDF-section__title {
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+
+}
+
+@media screen and (max-width: 639px) {
+
+  .products-section {
+    padding: 10px 0 28px 0;
+  }
+
+}
