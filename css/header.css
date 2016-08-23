@@ -84,7 +84,8 @@
   color: #8e8e8e;
 }
 
-.navigation_mobile__container,
+#menu-button,
+#mobile-input,
 .navigation_mobile,
 .header__navigation_mobile {
   display: none;
