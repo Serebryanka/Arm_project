@@ -85,7 +85,6 @@
 }
 
 #menu-button,
-#mobile-input,
 .navigation_mobile,
 .header__navigation_mobile {
   display: none;
@@ -106,11 +105,6 @@
   .menu-button_hamburger {
     position: relative;
     cursor: pointer;
-  }
-
-  .menu-button_IE,
-  .menu-button-close_IE {
-    display: none;
   }
 
   .menu-button_hamburger .hamburger {
