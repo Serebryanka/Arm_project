@@ -1,0 +1,146 @@
+
+/*BODY*/
+.clearfix {
+min-height: 0;
+} /*IE 7*/
+
+/*PRODUCTS-page*/
+.downloadPDF-section__title {
+font-weight: bold;
+}
+
+
+/*HEADER*/
+.navigation_main__item {
+display: inline; /*IE 7*/
+}
+
+.navigation_main__link {
+font-weight: bold;
+}
+
+
+/*BRAND-page*/
+.brand-section__content-wrapper {
+margin: 0;
+}
+
+.brand-section__content-wrapper:before {
+display: inline;
+}
+
+.brand-section__content-picture {
+top: 0;
+}
+
+.text-section__brand-background {
+  background-image: none;
+  display: block;
+  padding: 0;
+  margin-right: 180px;
+}
+
+.brand-background_IE_small {
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-image: url("../images/brand_tunein_small.jpg");
+  float: right;
+}
+
+.menu-button_hamburger .hamburger,
+.menu-button_hamburger:before,
+.menu-button_hamburger:after {
+  display: none !important;
+}
+
+@media screen and (max-width: 1023px) {
+
+  .brand-section__content-wrapper {
+    margin-bottom: 15px;
+  }
+
+  #menu-button_IE{
+    display: inline-block;
+    position: absolute;
+    width: 28px;
+    height: 21px;
+    vertical-align: middle;
+    left: 24px;
+    cursor: pointer;
+  }
+
+  .menu-button_IE {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/ic_menu_black_36dp_1x.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .menu-button_IE_opened {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/ic_close_black_36dp_1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .navigation_mobile,
+  .header__navigation_mobile {
+    display: block;
+    width: 0;
+    height: 0;
+    background: #ffffff;
+  }
+
+  .navigation_mobile__item,
+  .navigation_mobile__link {
+    display: none;
+  }
+
+  body.menu-open .header__navigation_mobile,
+  body.menu-open .navigation_mobile {
+    display: block;
+    width: 100%;
+    height: 580px;
+    z-index: 2;
+    margin: 0 auto;
+  }
+
+  body.menu-open .navigation_mobile__item {
+    display: block;
+    margin: 21px auto;
+    text-align: center;
+  }
+  body.menu-open .navigation_mobile__link {
+    display: inline;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 639px) {
+
+  .text-section__brand-background {
+    padding: 0;
+  }
+
+  .brand-background_IE_small {
+    display: none;
+  }
+
+  .brand-background_IE_big {
+    display: block;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 10px;
+    background-image: url("../images/brand_tunein.jpg");
+  }
+
+/*  .brand-section__content {
+    display: inline;
+  }*/
+
+}

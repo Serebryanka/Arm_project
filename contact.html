@@ -13,17 +13,21 @@
   <link href="css/contact-section.css" rel="stylesheet" type="text/css" />
   <link href="css/footer.css" rel="stylesheet" type="text/css" />
 
+  <!--[if lt IE 9]>
+  <link href="css/IE_styles.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
   <!--Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
-  <link href="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
   <link rel="SHORTCUT ICON" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
 
   <!--Jquery-->
   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 
@@ -36,7 +40,15 @@
       <div class="header__container fixed clearfix">
         <div class="container">
 
-          <label id="menu-button" class="menu-button_hamburger" for="mobile-input"><span></span></label>
+          <label id="menu-button" class="menu-button_hamburger">
+            <span class="hamburger"></span>
+          </label>
+
+          <!--[if lt IE 9]>
+          <label id="menu-button_IE" class="menu-button_IE_container" for="mobile-input">
+            <span class="menu-button_IE" id="menu-button_IE__background"></span>
+          </label>
+          <![endif]-->
 
           <div class="logo">
               <a href="index.html" class="logo__link">ARMICA</a>
@@ -137,6 +149,30 @@
     });
   </script>
 
+  <!--[if lt IE 9]>
+    <script type="text/javascript">
+      $("#menu-button_IE").click(function(){
+        if ($("#body").hasClass('menu-open')) {
+          $("#body").removeClass('menu-open');
+          $("#menu-button_IE__background").addClass('menu-button_IE');
+          $("#menu-button_IE__background").removeClass('menu-button_IE_opened');
+        }
+      else {
+        $("#body").addClass('menu-open');
+        $("#menu-button_IE__background").addClass('menu-button_IE_opened');
+        $("#menu-button_IE__background").removeClass('menu-button_IE');
+      };
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(".navigation_mobile__link.active").click(function(){
+        $("#body").removeClass('menu-open');
+        $("#menu-button_IE__background").addClass('menu-button_IE');
+        $("#menu-button_IE__background").removeClass('menu-button_IE_opened');
+      });
+    </script>
+  <![endif]-->
 
 </body>
 </html>

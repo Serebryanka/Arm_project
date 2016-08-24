@@ -8,6 +8,9 @@
   background-image: url("../images/brand_tunein.jpg");
   background-position: 100% 0;
   background-repeat: no-repeat;
+  -moz-background-size: 150px 150px;
+  -webkit-background-size: 150px 150px;
+  -o-background-size: 150px 150px;
   background-size: 150px 150px;
 }
 
@@ -150,6 +153,9 @@
     width: 100%;
     min-height: auto;
     background-position: 50% 100%;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
     background-size: 100%;
     padding: 0 0 100% 0;
     margin-bottom: 10px;
