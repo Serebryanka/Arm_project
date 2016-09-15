@@ -45,6 +45,15 @@ header, section, footer, aside, nav, main, article, figure {
     display: block;
 }
 
+a {
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+
 @media screen and (min-width: 1024px) {
   .mobile-only {
     display: none !important;

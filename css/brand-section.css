@@ -1,23 +1,51 @@
 .text-section__brand-background {
   display: inline-block;
+  position: relative;
+  width: 100%;
   margin-top: -7px;
-  padding: 0 180px 15px 0;
-  min-height: 150px;
+  padding: 0 180px 20px 0;
+  min-height: 170px;
   line-height: 150px;
   vertical-align: middle;
-  background-image: url("../images/brand_tunein.jpg");
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  -moz-background-size: 150px 150px;
-  -webkit-background-size: 150px 150px;
-  -o-background-size: 150px 150px;
-  background-size: 150px 150px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-section__brand-background .text-section__text {
+  margin-bottom: 0;
 }
 
 .brand__text-wrapper {
   display: inline-block;
   vertical-align: middle;
   line-height: 24px;
+}
+
+.brand__link_outer-container {
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.brand__link_outer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+
+.brand__link-picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
 }
 
 .brand-section {
@@ -77,7 +105,8 @@
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: normal;
+  letter-spacing: 0.02em;
   vertical-align: middle;
 }
 
@@ -97,9 +126,9 @@
 
 @media screen and (max-width: 1919px) {
 
-  .text-section__brand-background {
+  /*.text-section__brand-background {
     padding-bottom: 0;
-  }
+  }*/
 
   .brand__text-wrapper {
     padding-top: 10px;
@@ -116,7 +145,11 @@
 
   .text-section__brand-background {
     margin-top: 0;
-    background-position: 100% 5px;
+    padding-bottom: 0;
+  }
+
+  .text-section__brand-background .text-section__text {
+    margin-bottom: 30px;
   }
 
   .brand__text-wrapper {
@@ -152,14 +185,22 @@
   .text-section__brand-background {
     width: 100%;
     min-height: auto;
-    background-position: 50% 100%;
-    -moz-background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
     padding: 0 0 100% 0;
     margin-bottom: 10px;
   }
+
+  .brand__link_outer-container {
+    bottom:0;
+    width: 100%;
+    height: auto;
+  }
+
+  .brand__link_outer {
+    bottom: 0;
+    height: auto;
+  }
+
+
 
   .brand-section {
     padding-bottom: 0;

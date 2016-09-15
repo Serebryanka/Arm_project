@@ -4,12 +4,6 @@
 min-height: 0;
 } /*IE 7*/
 
-/*PRODUCTS-page*/
-.downloadPDF-section__title {
-font-weight: bold;
-}
-
-
 /*HEADER*/
 .navigation_main__item {
 display: inline; /*IE 7*/
@@ -19,6 +13,11 @@ display: inline; /*IE 7*/
 font-weight: bold;
 }
 
+.menu-button_hamburger .hamburger,
+.menu-button_hamburger:before,
+.menu-button_hamburger:after {
+  display: none !important;
+}
 
 /*BRAND-page*/
 .brand-section__content-wrapper {
@@ -36,30 +35,22 @@ top: 0;
 .text-section__brand-background {
   background-image: none;
   display: block;
+  width: auto;
   padding: 0;
-  margin-right: 180px;
+  padding-right: 180px;
 }
 
-.brand-background_IE_small {
-  display: block;
-  width: 150px;
-  height: 150px;
-  background-image: url("../images/brand_tunein_small.jpg");
-  float: right;
+/*PRODUCTS-page*/
+.downloadPDF-section__title {
+font-weight: bold;
 }
 
-.menu-button_hamburger .hamburger,
-.menu-button_hamburger:before,
-.menu-button_hamburger:after {
-  display: none !important;
+/*CONTACT-page*/
+.contact__button {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1023px) {
-
-  .brand-section__content-wrapper {
-    margin-bottom: 15px;
-  }
-
   #menu-button_IE{
     display: inline-block;
     position: absolute;
@@ -119,28 +110,17 @@ top: 0;
     display: inline;
     font-weight: bold;
   }
+
+  .brand-section__content-wrapper {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 639px) {
 
   .text-section__brand-background {
     padding: 0;
+    padding-bottom: 100%;
   }
-
-  .brand-background_IE_small {
-    display: none;
-  }
-
-  .brand-background_IE_big {
-    display: block;
-    width: 320px;
-    height: 320px;
-    margin: 0 auto 10px;
-    background-image: url("../images/brand_tunein.jpg");
-  }
-
-/*  .brand-section__content {
-    display: inline;
-  }*/
 
 }
