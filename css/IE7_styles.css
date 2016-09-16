@@ -1,0 +1,25 @@
+/*Photo-gallery controls*/
+ .photo-gallery__button-container {
+   float: left;
+ }
+
+.photo-gallery__controls_right .photo-gallery__button-container {
+  margin-left: 5px;
+}
+
+.photo-gallery__button_inner {
+  top: 4px;
+}
+
+.photo-gallery__button__icon {
+  position: relative;
+  top: -4px;
+}
+
+/*Photo-gallery small images for mobile*/
+
+@media screen and (max-width: 639px) {
+    .photo-container__image_small {
+      float: left;
+    }
+}

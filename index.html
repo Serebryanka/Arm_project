@@ -17,6 +17,10 @@
   <link href="css/IE_styles.css" rel="stylesheet" type="text/css" />
   <![endif]-->
 
+  <!--[if lte IE 7]>
+  <link href="css/IE7_styles.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
+
   <!--Fonts-->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -94,16 +98,70 @@
       <div class="main-content__section">
           <div class="main-content__photo-section clearfix">
               <div class="photo-section__photo-wrapper">
-                  <div class="photo-container">
+                  <div class="photo-container photo-gallery">
+
                       <div class="photo-container__group">
-                          <div class="photo-container__image_small"><img class="photo_small" src="images/5755389_orig.jpg" alt="Slider picture"/></div>
-                          <div class="photo-container__image_small"><img class="photo_small" src="images/8443310_orig.jpg" alt="Slider picture"/></div>
-                          <div class="photo-container__image_small"><img class="photo_small" src="images/9169494_orig.jpg" alt="Slider picture"/></div>
-                          <div class="photo-container__image_small"><img class="photo_small" src="images/666745_orig.jpg" alt="Slider picture"/></div>
+                          <div class="photo-container__image_small">
+                            <a class="photo-gallery__link" href="">
+                              <img class="photo_small" src="images/5755389_orig.jpg" alt="Slider picture"/>
+                            </a>
+                          </div>
+                          <div class="photo-container__image_small">
+                            <a class="photo-gallery__link" href="">
+                              <img class="photo_small" src="images/8443310_orig.jpg" alt="Slider picture"/>
+                            </a>
+                          </div>
+                          <div class="photo-container__image_small">
+                            <a class="photo-gallery__link" href="">
+                              <img class="photo_small" src="images/9169494_orig.jpg" alt="Slider picture"/>
+                            </a>
+                          </div>
+                          <div class="photo-container__image_small">
+                            <a class="photo-gallery__link" href="">
+                              <img class="photo_small" src="images/666745_orig.jpg" alt="Slider picture"/>
+                            </a>
+                          </div>
                       </div>
 
                       <div class="photo-container__image_big">
                           <img id="photo_big" class="photo_big" src="images/5755389_orig.jpg" alt="Slider thumbnail picture"/>
+
+                          <div class="photo-gallery__controls photo-gallery__controls_left">
+                            <div class="photo-gallery__button-container">
+                              <span class="photo-gallery__button_play photo-gallery__button clearfix">
+                                <span class="photo-gallery__button_inner">Play
+                                  <span class="photo-gallery__button__icon"></span>
+                                </span>
+                                <span class="photo-gallery__button__bg"></span>
+                              </span>
+                            </div>
+                            <div class="photo-gallery__button-container">
+                              <span class="photo-gallery__button_pause photo-gallery__button clearfix">
+                                <span class="photo-gallery__button_inner">Pause
+                                  <span class="photo-gallery__button__icon"></span>
+                                </span>
+                                <span class="photo-gallery__button__bg"></span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="photo-gallery__controls photo-gallery__controls_right">
+                            <div class="photo-gallery__button-container">
+                              <span class="photo-gallery__button_prev photo-gallery__button clearfix">
+                                <span class="photo-gallery__button_inner">
+                                  <span class="photo-gallery__button__icon"></span>
+                                </span>
+                                <span class="photo-gallery__button__bg"></span>
+                              </span>
+                            </div>
+                            <div class="photo-gallery__button-container">
+                              <span class="photo-gallery__button_next photo-gallery__button clearfix">
+                                <span class="photo-gallery__button_inner">
+                                  <span class="photo-gallery__button__icon"></span>
+                                </span>
+                                <span class="photo-gallery__button__bg"></span>
+                              </span>
+                            </div>
+                          </div>
                       </div>
                   </div>
               </div>
